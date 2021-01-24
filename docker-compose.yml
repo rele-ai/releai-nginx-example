@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  nginx-demo-proxy:
+    container_name: nginx-demo-proxy
+    ports:
+      - 80:80
+      - 443:443
+    build: ./proxy/
+    networks:
+      - internal
+    expose:
+      - 80
+      - 443
+
+  nginx-demo-server:
+    container_name: nginx-demo-server
+    ports:
+      - 9000:9000
+    build: ./server/
+    networks:
+      - internal
+    expose:
+      - 9000
+
+networks:
+  internal:
+
