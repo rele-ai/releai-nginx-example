@@ -1,8 +1,8 @@
 #!/bin/bash
 
 ############ VARS ############
-APP_ID="***REMOVED***"
-APP_HASH="***REMOVED***"
+APP_ID=""
+APP_HASH=""
 
 TOKEN=$(echo -ne $APP_ID:$APP_HASH | base64)
 HOST="127.0.0.1"
