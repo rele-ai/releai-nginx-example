@@ -3,8 +3,8 @@ const { RBS } = require("@releai/rb-node-sdk")
 
 // initiate the RELE.AI Server
 const rbs = new RBS({
-    appId: "***REMOVED***",
-    appHash: "***REMOVED***"
+    appId: "**REMOVED**",
+    appHash: "**REMOVED**"
 })
 
 // register all the handlers

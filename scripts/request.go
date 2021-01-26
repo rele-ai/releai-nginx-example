@@ -15,8 +15,8 @@ import (
 )
 
 func getToken() string {
-	appId := "***REMOVED***"
-	appHash := "***REMOVED***"
+	appId := "**REMOVED**"
+	appHash := "**REMOVED**"
 	token := base64.StdEncoding.EncodeToString([]byte(fmt.Sprintf("%s:%s", appId, appHash)))
 
 	return fmt.Sprintf("Basic %s", token)
